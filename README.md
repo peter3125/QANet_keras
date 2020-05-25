@@ -6,6 +6,18 @@ This keras model refers to QANet in tensorflow (https://github.com/NLPLearn/QANe
 > I find that the conv based multi-head attention in tensor2tensor (https://github.com/NLPLearn/QANet/blob/master/layers.py) performs 3%~4% better than the multiplying matrices based one in (https://github.com/bojone/attention/blob/master/attention_keras.py).
 
 ## Pipline
+
+Automated
+```
+# optional - create venv
+python3 -m venv .env
+# install necessary libraries
+pip3 install -r requirements.txt
+# run the download steps below and the pre-processing
+./download.sh
+```
+
+
 1. Download squad data `dev-v1.1.json` and `train-v1.1.json` from (https://rajpurkar.github.io/SQuAD-explorer/) to the folder `./original_data`.
 
 2. Download `glove.840B.300d.txt` from (https://nlp.stanford.edu/projects/glove/) to the folder `./original_data`.
