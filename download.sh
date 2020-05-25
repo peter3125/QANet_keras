@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# re-entrant - check existance of files before acting
+# re-entrant - check existence of files before acting
 
 cd original_data/
 
