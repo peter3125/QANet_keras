@@ -7,7 +7,7 @@ This keras model refers to QANet in tensorflow (https://github.com/NLPLearn/QANe
 
 ## Pipline
 
-Automated:
+### Automated:
 ```
 # optional - create venv
 python3 -m venv .env
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 python train_QANet.py
 ```
 
-Manually:
+### Manually:
 
 1. Download squad data `dev-v1.1.json` and `train-v1.1.json` from (https://rajpurkar.github.io/SQuAD-explorer/) to the folder `./original_data`.
 
@@ -50,7 +50,7 @@ Manually:
 
 ~~I find that EMA in keras is hard to implement with GPU, and the training speed is greatly affected by it in keras. Besides, it's hard to add the slice op in keras too, so the training speed is further slower(cost about twice as much time compared with the optimized tensorflow version...).~~
 
-Now, the gpu-version EMA can work perporly in keras.
+Now, the gpu-version EMA can work properly in keras.
 
 ## Results
 All models are set in 8 heads, 128 filters.
