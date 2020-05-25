@@ -27,3 +27,10 @@ else
   printf "glove 840B 300d txt already extracted\n"
 fi
 
+cd ..
+# run the pre-processing
+if [ ! -f "dataset_wordpiece/trainset_wordpiece.pkl" ]; then
+  python preprocess.py
+else
+  printf "pre-processing already done\n"
+fi
