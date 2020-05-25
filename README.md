@@ -7,16 +7,22 @@ This keras model refers to QANet in tensorflow (https://github.com/NLPLearn/QANe
 
 ## Pipline
 
-Automated
+Automated:
 ```
 # optional - create venv
 python3 -m venv .env
+
 # install necessary libraries
 pip3 install -r requirements.txt
+
 # run the download steps below and the pre-processing
 ./download.sh
+
+# then start training
+python train_QANet.py
 ```
 
+Manually:
 
 1. Download squad data `dev-v1.1.json` and `train-v1.1.json` from (https://rajpurkar.github.io/SQuAD-explorer/) to the folder `./original_data`.
 
