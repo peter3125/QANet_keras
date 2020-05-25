@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# re-entrant - check existance of files before acting
+
 cd original_data/
 
 if [ ! -f "train-v1.1.json" ]; then
@@ -28,7 +30,7 @@ else
 fi
 
 cd ..
-# run the pre-processing
+# run the pre-processing?
 if [ ! -f "dataset_wordpiece/trainset_wordpiece.pkl" ]; then
   python preprocess.py
 else
