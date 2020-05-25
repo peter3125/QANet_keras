@@ -12,8 +12,8 @@ Automated:
 # optional - create venv
 python3 -m venv .env
 
-# install necessary libraries
-pip3 install -r requirements.txt
+# install necessary libraries (assuming pip3 and python3)
+pip install -r requirements.txt
 
 # run the download steps below and the pre-processing
 ./download.sh
